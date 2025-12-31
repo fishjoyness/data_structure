@@ -40,7 +40,7 @@ void CreateHuffmanTree(HuffmanTree& HT, int n) {
     m = 2 * n - 1;            // 哈夫曼树总结点数
     HT = new HTNode[m + 1];   // 0号单元未用，所以需要动态分配m+1个单元
 
-    // 将1-m号单元中的双亲、左孩子、右孩子的下标都初始化为0
+//一开始，所有节点都是孤立的，所以它们的这些关系都是空的。
     for (i = 1; i <= m; ++i) {
         HT[i].parent = 0;
         HT[i].lchild = 0;
